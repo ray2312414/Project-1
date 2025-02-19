@@ -1,0 +1,41 @@
+public class Main {
+
+
+// Problem 2: Count the occurrences of the substring "bob"
+
+public static int countBobOccurrences(String s) {
+
+// Initialize the counter for the occurrences of "bob"
+
+int bobCount = 0;
+
+
+// Loop through the string and check for occurrences of "bob"
+
+for (int i = 0; i < s.length() - 2; i++) {
+
+// Check if the substring starting at the current position equals "bob"
+
+if (s.substring(i, i + 3).equals("bob")) {
+
+bobCount++; // Increment the count when "bob" is found
+
+}
+
+}
+
+
+return bobCount; // Return the total number of occurrences
+
+}
+
+
+public static void main(String[] args) {
+
+String s = "azcbobobegghakl";
+
+System.out.println("Number of times bob occurs is: " + countBobOccurrences(s)); // Expected output: 2
+
+}
+
+}
