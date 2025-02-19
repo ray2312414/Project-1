@@ -1,0 +1,25 @@
+public class Main {
+
+    // Problem 1: Count the number of vowels in the string
+    public static int countVowels(String s) {
+        // Initialize a counter to store the number of vowels
+        int vowelCount = 0;
+
+        // Loop through each character in the string
+        for (int i = 0; i < s.length(); i++) {
+            char ch = s.charAt(i);
+            // Check if the character is a vowel
+            if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
+                vowelCount++;  // Increment the vowel count if a vowel is found
+            }
+        }
+
+        return vowelCount;  // Return the total number of vowels
+    }
+
+    public static void main(String[] args) {
+        String s = "azcbobobegghakl";
+        System.out.println("Number of vowels: " + countVowels(s));  // Expected output: 5
+    }
+}
+
